@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"id": "shell,jbang '-Dorg.apache.camel.debugger.suspend=true' camel@apache/camel run '${relativeFile}' --logging-level=info '--dep=org.apache.camel:camel-debug',",
+			"problemMatcher": [
+				"$camel.debug.problemMatcher"
+			],
+			"label": "camel: Start Camel application with debug enabled with JBang",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
